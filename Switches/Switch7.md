@@ -1,3 +1,4 @@
+```
 hostname Switch7
 !
 boot-start-marker
@@ -101,3 +102,4 @@ line con 0
 line vty 5 15
 !
 end
+```
