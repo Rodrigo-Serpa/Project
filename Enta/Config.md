@@ -112,11 +112,13 @@ interface Tunnel100
  ip address 192.168.18.1 255.255.255.252
  tunnel source Serial0/0/0
  tunnel destination 1.18.0.2
+ no shut
 !
 interface Tunnel200
  ip address 192.168.18.5 255.255.255.252
  tunnel source Serial0/0/1
  tunnel destination 2.18.0.2
+ no shut
 !
 interface Embedded-Service-Engine0/0
  no ip address
@@ -126,24 +128,28 @@ interface GigabitEthernet0/0
  no ip address
  duplex auto
  speed auto
+ no shut
 !
 interface GigabitEthernet0/0.10
  encapsulation dot1Q 10
  ip address 10.0.18.1 255.255.255.0
  ip nat inside
  ip virtual-reassembly in
+ no shut
 !
 interface GigabitEthernet0/0.20
  encapsulation dot1Q 20
  ip address 10.1.18.1 255.255.255.0
  ip nat inside
  ip virtual-reassembly in
+ no shut
 !
 interface GigabitEthernet0/0.30
  encapsulation dot1Q 30
  ip address 10.2.18.1 255.255.255.0
  ip nat inside
  ip virtual-reassembly in
+ no shut
 !
 interface GigabitEthernet0/1
  no ip address
@@ -161,12 +167,14 @@ interface Serial0/0/0
  ip nat outside
  ip virtual-reassembly in
  crypto map OMAPA
+ no shut
 !
 interface Serial0/0/1
  ip address 2.18.0.1 255.255.255.252
  ip nat outside
  clock rate 2000000
  crypto map MAPA
+ no shut
 !
 !
 router eigrp 100
