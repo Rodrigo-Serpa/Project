@@ -1,3 +1,4 @@
+```
 hostname BETA
 !
 boot-start-marker
@@ -143,3 +144,4 @@ line vty 0 4
 !
 scheduler allocate 20000 1000
 end
+```
