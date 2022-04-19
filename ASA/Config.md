@@ -1,3 +1,4 @@
+```
 !
 interface GigabitEthernet1/1
  bridge-group 1
@@ -203,3 +204,4 @@ call-home
   subscribe-to-alert-group telemetry periodic daily
 Cryptochecksum:283abb71ec510b066c40e86a84c0387c
 : end
+```
