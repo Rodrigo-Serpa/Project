@@ -61,6 +61,7 @@ interface Tunnel200
  ip address 192.168.18.6 255.255.255.252
  tunnel source Serial0/1/1
  tunnel destination 2.18.0.1
+ no shut
 !
 interface FastEthernet0/0
  ip address 172.16.18.3 255.255.255.0
@@ -68,6 +69,7 @@ interface FastEthernet0/0
  ip virtual-reassembly in
  duplex auto
  speed auto
+ no shut
 !
 interface FastEthernet0/1
  no ip address
@@ -85,6 +87,7 @@ interface Serial0/1/1
  ip nat outside
  ip virtual-reassembly in
  crypto map MAPA
+ no shut
 !
 interface Serial0/2/0
  no ip address
